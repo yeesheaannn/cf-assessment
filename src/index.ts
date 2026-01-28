@@ -6,7 +6,7 @@ export default {
 		// Get Identity and Location Data
 		const email = request.headers.get("Cf-Access-Authenticated-User-Email") || "Unknown User";
 		// Cloudflare automatically attaches the visitor's country code (e.g., "MY", "US") to the request.
-		const country = request.cf?.country || "US";
+		const country = request.cf?.country || "Unknown";
 		// The current time is captured so it can be displayed when the user was authenticated.
 		const timestamp = new Date().toISOString();
 
