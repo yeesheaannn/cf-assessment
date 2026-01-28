@@ -6,6 +6,7 @@ declare namespace Cloudflare {
 		mainModule: typeof import("./src/index");
 	}
 	interface Env {
+		ASSETS_BUCKET: R2Bucket;
 	}
 }
 interface Env extends Cloudflare.Env {}
