@@ -6,6 +6,10 @@
 	"observability": {
 		"enabled": true
 	},
+	"route": {
+		"pattern": "tunnel.yeesheanlee.qzz.io/secure*",
+		"zone_id": "f8f0558edd061e777f7a7848176b6fc7"
+	},
 	"r2_buckets": [
     {
       "binding": "ASSETS_BUCKET",
